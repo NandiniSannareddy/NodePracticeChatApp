@@ -10,7 +10,7 @@ dotenv.config();
 const app=express();
 app.use(cors());
 app.use(express.json());
-const port=process.env.port;
+const port=process.env.port || 5000;
 
 app.use('/api/users', userRoutes);
 
