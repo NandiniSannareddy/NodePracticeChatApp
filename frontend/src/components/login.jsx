@@ -31,7 +31,7 @@ export function Login(){
               setMsg(err.response.data.message);
           }
           else{
-            setMsg("different error");
+            setMsg(err);
           }
     }
   }
